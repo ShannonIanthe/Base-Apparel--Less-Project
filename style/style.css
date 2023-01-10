@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_GbQXME.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_DjQXME.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/josefinsans/v25/Qw3PZQNVED7rKGKxtqIqX5E-AVSJrOCfjY46_ObXXME.ttf) format('truetype');
+}
+/* Colors */
+/* Fonts */
+/* Widths:
+- Mobile: 375px
+- Desktop: 1440px
+
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weights: 300, 400, 600
+ */
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-image: url("../images/bg-pattern-desktop.svg");
+  padding: 0;
+  margin: 0;
+  color: green;
+}
+#grid-item1 {
+  grid-area: 1 / 1 / span 1 / span 2;
+}
+#grid-item2 {
+  grid-area: 2 / 1 / span 2 / span 2;
+}
+#grid-item3 {
+  grid-area: 1 / 3 / span 3 / span 2;
+}
