@@ -45,9 +45,10 @@ body {
 .left {
   display: flex;
   flex-direction: column;
+  width: 60%;
   justify-content: space-between;
-  align-items: center;
-  height: 50vh;
+  padding: 8% 0% 0% 20%;
+  gap: 10rem;
 }
 #grid-item1 {
   grid-area: 1 / 1 / span 1 / span 2;
@@ -55,21 +56,79 @@ body {
 h1 {
   margin: 0;
   color: hsl(0, 36%, 70%);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  font-size: 3.8rem;
+  letter-spacing: 10px;
 }
 h2 {
   margin: 0;
   color: hsl(0, 6%, 24%);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 3.5rem;
+  letter-spacing: 10px;
+  line-height: 4rem;
 }
 #grid-item2 {
   grid-area: 2 / 1 / span 2 / span 2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 p {
   font-family: "Josefin Sans", sans-serif;
   color: hsl(0, 36%, 70%);
+  line-height: 1.6rem;
+  padding: 0.6rem 0rem;
 }
 #grid-item3 {
   grid-area: 1 / 3 / span 3 / span 2;
+}
+/* Email Input */
+.form-group {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.form-group > span,
+.form-group .form-field {
+  white-space: nowrap;
+  display: block;
+}
+.form-group > span:not(:first-child):not(:last-child),
+.form-group .form-field:not(:first-child):not(:last-child) {
+  border-radius: 0;
+}
+.form-group > span:first-child,
+.form-group .form-field:first-child {
+  border-radius: 6px 0 0 6px;
+}
+.form-group > span:last-child,
+.form-group .form-field:last-child {
+  border-radius: 0 6px 6px 0;
+}
+.form-group > span:not(:first-child),
+.form-group .form-field:not(:first-child) {
+  margin-left: -1px;
+}
+.form-group .form-field {
+  position: relative;
+  z-index: 1;
+  flex: 1 1 auto;
+  width: 1%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.form-group > span {
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--group-color);
+  background: hsl(0, 36%, 70%);
+  border: 1px solid var(--group-border);
+  transition: background 0.3s ease, border 0.3s ease, color 0.3s ease;
+}
+.form-group:focus-within > span {
+  color: var(--group-color-focus);
+  background: var(--group-background-focus);
+  border-color: var(--group-border-focus);
 }
