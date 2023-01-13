@@ -132,3 +132,9 @@ p {
   background: var(--group-background-focus);
   border-color: var(--group-border-focus);
 }
+@media (max-width: 400px) {
+  .grid-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
