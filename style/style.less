@@ -74,7 +74,7 @@ p {
   font-family: @font-familly;
   color: @saturated-red;
   line-height: 1.6rem;
-  padding: .6rem 0rem;
+  padding: 0.6rem 0rem;
 }
 
 #grid-item3 {
@@ -82,54 +82,33 @@ p {
 }
 
 /* Email Input */
-
-
 .form-group {
   position: relative;
-  display: flex;
   width: 100%;
-  & > span,
-  .form-field {
-      white-space: nowrap;
-      display: block;
-      &:not(:first-child):not(:last-child) {
-          border-radius: 0;
-      }
-      &:first-child {
-          border-radius: 6px 0 0 6px;
-      }
-      &:last-child {
-          border-radius: 0 6px 6px 0;
-      }
-      &:not(:first-child) {
-          margin-left: -1px;
-      }
+
+  .input {
+    position: absolute;
+    z-index: 9;
   }
-  .form-field {
-      position: relative;
-      z-index: 1;
-      flex: 1 1 auto;
-      width: 1%;
-      margin-top: 0;
-      margin-bottom: 0;
+  input {
+    border-radius: 15px;
+    padding: .4rem 2rem;
   }
-  & > span {
-      text-align: center;
-      padding: 8px 12px;
-      font-size: 14px;
-      line-height: 25px;
-      color: var(--group-color);
-      background: @saturated-red;
-      border: 1px solid var(--group-border);
-      transition: background .3s ease, border .3s ease, color .3s ease;
+  .svg {
+    position: absolute;
+    z-index: 10;
+    left: 12rem;    
   }
-  &:focus-within {
-      & > span {
-          color: var(--group-color-focus);
-          background: var(--group-background-focus);
-          border-color: var(--group-border-focus);
-      }
+  svg {
+    border-radius: 1rem;
+    padding: .4rem 2rem;
   }
+}
+
+
+
+.icon-arrow {
+  background-color: pink
 }
 
 @media (max-width: 400px) {
