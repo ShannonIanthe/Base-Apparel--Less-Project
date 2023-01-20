@@ -7,7 +7,7 @@
 @linear-color2: 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
 /* Fonts */
 @font-size: 16px;
-@font-familly: "Josefin Sans", sans-serif;
+@font-family: "Josefin Sans", sans-serif;
 
 /* Widths:
 - Mobile: 375px
@@ -50,7 +50,7 @@ body {
 h1 {
   margin: 0;
   color: @saturated-red;
-  font-family: @font-familly;
+  font-family: @font-family;
   font-weight: 100;
   font-size: 3.8rem;
   letter-spacing: 10px;
@@ -59,7 +59,7 @@ h1 {
 h2 {
   margin: 0;
   color: @dark-gray-red;
-  font-family: @font-familly;
+  font-family: @font-family;
   font-weight: 600;
   font-size: 3.5rem;
   letter-spacing: 10px;
@@ -71,7 +71,7 @@ h2 {
 }
 
 p {
-  font-family: @font-familly;
+  font-family: @font-family;
   color: @saturated-red;
   line-height: 1.6rem;
   padding: 0.6rem 0rem;
@@ -84,24 +84,58 @@ p {
 /* Email Input */
 .form-group {
   position: relative;
-  width: 100%;
+  width: 80%;
+/*
+  input[type="submit"] {
+    display: none;
+  } */
 
-  .input {
+  .form-field {
     position: absolute;
-    z-index: 9;
+    z-index: 1;
+    color: @saturated-red;
+    border-color: @saturated-red;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    padding: .7rem 13rem .8rem 1rem;
+    font-family: @font-family;
+    letter-spacing: 1px;
+    font-weight: 400;
+    transition: background-color 0.5s ease-out;
   }
-  input {
-    border-radius: 15px;
-    padding: .4rem 2rem;
+  input:optional {
+    border-color: gray;
   }
-  .svg {
-    position: absolute;
-    z-index: 10;
-    left: 12rem;    
+  input:required {
+    border-color: black;
+  }
+  input:invalid {
+    border-color: @saturated-red;
+  }
+  input:focus:invalid {
+    background: url('../images/icon-error.svg') no-repeat 95% 50%;
+    background-size: 25px;
+    margin-right: 4rem;
   }
   svg {
-    border-radius: 1rem;
-    padding: .4rem 2rem;
+    position: absolute;
+    z-index: 2;
+    left: 20rem;
+    border-radius: 20px;
+    padding: .6rem 2rem;
+    box-shadow: 4px 10px 4px hsl(0, 65%, 93%);
+    cursor: pointer;
+  }
+
+  .submit {
+    position: absolute;
+    z-index: 3;
+    border-radius: 20px;
+    padding: .6rem 2rem .6rem 1rem;
+    margin-left: 19rem;
+    cursor: pointer;
+    opacity: 0.0 - 1.0;
   }
 }
 
