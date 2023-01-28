@@ -34,12 +34,12 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
+  max-height: 100vh;
 }
 
 .left {
   display: flex;
   flex-direction: column;
-  width: 60%;
   justify-content: space-between;
   padding: 8% 0% 0% 20%;
   gap: 10rem;
@@ -72,6 +72,10 @@ h2 {
   grid-area: 2 / 1 / span 2 / span 2;
 }
 
+.main{
+  width: 70%;
+}
+
 p {
   font-family: @font-family;
   color: @saturated-red;
@@ -88,7 +92,7 @@ p {
 /* Email Input */
 .form-group {
   position: relative;
-  width: 80%;
+  width: 90%;
 /*
   input[type="submit"] {
     display: none;
@@ -102,7 +106,7 @@ p {
     border-width: 1px;
     border-style: solid;
     border-radius: 20px;
-    padding: .7rem 13rem .8rem 1rem;
+    padding: .8rem 13rem .8rem 1rem;
     font-family: @font-family;
     letter-spacing: 1px;
     font-weight: 400;
@@ -117,12 +121,12 @@ p {
     background-size: 27px;
     background-position: 50% 5% 10% 5%;
   }
-  svg {
+  img {
     position: absolute;
     z-index: 2;
     left: 20rem;
     border-radius: 20px;
-    padding: 1.3rem 2rem;
+    padding: .9rem 1.5rem;
     box-shadow: 4px 10px 4px hsl(0, 65%, 93%);
     cursor: pointer;
     background-color: pink;
