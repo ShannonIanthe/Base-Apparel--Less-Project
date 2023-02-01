@@ -37,6 +37,10 @@ body {
   flex-direction: row;
 }
 
+.left-container {
+  padding: 1rem 1rem;
+}
+
 .logo{
   order: 1;
 }
@@ -46,7 +50,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4rem;
+  gap: 1rem;
   order: 2;
 }
 
@@ -57,12 +61,16 @@ body {
   justify-content: center;  
 }
 
+.mobile-img{
+  height: 2px;
+  width: 2px;
+  opacity: 0;
+}
+
 #div3{
   order: 3;
 }
-#div1:nth-child(1) { order: 1; }
-#div2:nth-child(2) { order: 2; }
-#div3:nth-child(3) { order: 3; }
+
 
 /* Form styles
 
@@ -122,15 +130,27 @@ body {
 }
 */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   .flex-container {
-    display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
-  #div1:nth-child(1) { order: 1; }
-  #div2:nth-child(2) { order: 3; }
-  #div3:nth-child(3) { order: 2; }
   .main{
     text-align: center;
+  }
+  .main::after{
+    background-image: url("../images/hero-mobile.jpg");
+  }
+  #div3{
+    display: none;
+  }
+  .mobile-img{
+    width:100%;
+                height:100%;
+                object-fit:cover;
+    opacity: 1;
+  }
+  .left-container{
+    padding: 0; 
   }
 }
