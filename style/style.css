@@ -155,10 +155,16 @@ p {
     padding: 0;
   }
   .logo {
-    padding: 5%;
+    padding: 1%;
   }
   .main {
     text-align: center;
+  }
+  h1 {
+    line-height: 2rem;
+  }
+  h2 {
+    line-height: 3rem;
   }
   p {
     padding-bottom: 1rem;
