@@ -11,8 +11,13 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
   - [The challenge](#the-challenge)<br>
   Your challenge is to build out this coming soon page and get it looking as close to the design as possible.
 
-  - [Screenshot](#screenshot)
+  - [Screenshot](#screenshot) Desktop View <br>
+  ![Screen Shot 2023-02-02 at 10 10 42 AM](https://user-images.githubusercontent.com/61018008/216294027-1835e124-4ed3-488e-8083-e664eae72503.png)
  
+   - [Screenshot](#screenshot) Mobile View <br>
+   
+![Screen Shot 2023-02-02 at 11 03 30 AM](https://user-images.githubusercontent.com/61018008/216294473-c381bbb8-74f0-4e4b-8a5d-badd21431537.png)
+
   - [Links](#links)<br>
   Hosted on Vercel:<br>
   https://base-apparel-less-project.vercel.app/
