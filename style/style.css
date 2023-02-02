@@ -48,16 +48,12 @@ body {
 .left-container {
   padding: 1rem 1rem;
 }
-.logo {
-  order: 1;
-}
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  order: 2;
 }
 .logo,
 .main {
@@ -71,78 +67,104 @@ body {
   width: 2px;
   opacity: 0;
 }
-#div3 {
-  order: 3;
+/* Fonts */
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 100;
+  letter-spacing: 4px;
+  color: hsl(0, 36%, 70%);
+  line-height: 3rem;
+  font-size: 3.4rem;
 }
-/* Form styles
+h2 {
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(0, 6%, 24%);
+  letter-spacing: 12px;
+  line-height: 3.5rem;
+  font-size: 3rem;
+  padding-top: 1rem;
+}
+p {
+  font-family: "Josefin Sans", sans-serif;
+  padding-bottom: 0.5rem;
+  text-align: justify;
+  line-height: 1.4rem;
+  padding: 1.3rem 0rem;
+  color: hsl(0, 36%, 70%);
+}
+/* Form styles   /*
 
-/* Email Input 
+/* Email Input   /**/
 .form-group {
   position: relative;
-  width: 90%;
-  /*
-  input[type="submit"] {
-    display: none;
-  } */
-/*
-  .form-field {
-    position: absolute;
-    z-index: 1;
-    color: @saturated-red;
-    border-color: @saturated-red;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 20px;
-    padding: 0.8rem 13rem 0.8rem 1rem;
-    font-family: @font-family;
-    letter-spacing: 1px;
-    font-weight: 400;
-    transition: background-color 0.5s ease-out;
-  }
-  input:invalid {
-    border-color: @saturated-red;
-    background-color: transparent;
-  }
-  input:focus:invalid {
-    background: url("../images/icon-error.svg") no-repeat 90% 60%;
-    background-size: 27px;
-    background-position: 50% 5% 10% 5%;
-  }
-  img {
-    position: absolute;
-    z-index: 2;
-    left: 20rem;
-    border-radius: 20px;
-    padding: 0.9rem 1.5rem;
-    box-shadow: 4px 10px 4px hsl(0, 65%, 93%);
-    cursor: pointer;
-    background-color: pink;
-    color: white;
-  }
-
-  .submit {
-    position: absolute;
-    z-index: 3;
-    border-radius: 20px;
-    padding: 0.6rem 2rem 0.6rem 1rem;
-    margin-left: 19rem;
-    cursor: pointer;
-    opacity: 0 - 1;
-  }
 }
-*/
+.form-group input[type="submit"] {
+  display: none;
+}
+.form-group .form-field {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  color: hsl(0, 36%, 70%);
+  border-color: hsl(0, 36%, 70%);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 20px;
+  padding: 1rem 8rem 0.8rem 1rem;
+  font-family: "Josefin Sans", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 400;
+  transition: background-color 0.5s ease-out;
+}
+.form-group input:invalid {
+  border-color: hsl(0, 36%, 70%);
+  background-color: transparent;
+}
+.form-group input:focus:invalid {
+  background: url("../images/icon-error.svg") no-repeat 90% 60%;
+  background-size: 27px;
+  background-position: 50% 5% 10% 5%;
+}
+.form-group img {
+  position: absolute;
+  z-index: 2;
+  left: 15rem;
+  border-radius: 20px;
+  padding: 0.9rem 1.5rem;
+  box-shadow: 4px 10px 4px hsl(0, 65%, 93%);
+  cursor: pointer;
+  background-color: pink;
+  color: white;
+}
+.form-group .submit {
+  position: absolute;
+  z-index: 3;
+  border-radius: 20px;
+  padding: 0.6rem 2rem 0.6rem 1rem;
+  margin-left: 19rem;
+  cursor: pointer;
+  opacity: -1;
+}
 @media only screen and (max-width: 700px) {
   .flex-container {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  .left-container {
+    padding: 0;
+  }
+  .logo {
+    padding: 5%;
+  }
   .main {
     text-align: center;
   }
-  .main::after {
-    background-image: url("../images/hero-mobile.jpg");
+  p {
+    padding-bottom: 1rem;
   }
   #div3 {
+    height: 1px;
     display: none;
   }
   .mobile-img {
@@ -150,8 +172,5 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 1;
-  }
-  .left-container {
-    padding: 0;
   }
 }
