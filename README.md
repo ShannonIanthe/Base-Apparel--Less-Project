@@ -8,21 +8,29 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The challenge](#the-challenge)<br>
+  Your challenge is to build out this coming soon page and get it looking as close to the design as possible.
+
   - [Screenshot](#screenshot)
-  - [Links](#links)
+ 
+  - [Links](#links)<br>
+  Hosted on Vercel:<br>
+  https://base-apparel-less-project.vercel.app/
+  
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+  - [Built with](#built-with) <br>
+  HTML, CSS, and LESS Preprocessor <br><br>
+  - [What I learned](#what-i-learned) <br>
+  It was very difficult for me to place the picture in between the logo and the 'we're coming' div on mobile version. In the end I decided to use display: none for the right image when the desktop changes to mobile size. I also placed a div in between the logo and the 'we're coming' div and made the mobile image 1px and transparent when it was in desktop version and then with media queries I styled it as normal size and visible. <br><br>
+
+- [Author](#author)<br>
+Shannon Mettry
+
 
 
 ## Overview
+The challenge is to build out this coming soon page and get it looking as close to the design as possible.
 
-### The challenge
 
 Users should be able to:
 
